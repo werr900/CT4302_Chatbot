@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true })); //
 var fs = require('fs');
 var obj = JSON.parse(fs.readFileSync('info.json', 'utf8'));
 
-console.log('Answer: ' + obj['경주봉황대']['정의']); //// debugging
+console.log('Answer: ' + obj['강아지']['아침']['집']); //// debugging
 
 // app.post('/', function(req, res){
 //   var speech = 
