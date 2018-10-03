@@ -1,0 +1,15 @@
+{
+  "name": "museum-bot",
+  "version": "1.0.0",
+  "description": "museum bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
