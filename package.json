@@ -1,7 +1,7 @@
 {
-  "name": "museum-bot",
+  "name": "CT4302_Chatbot",
   "version": "1.0.0",
-  "description": "museum bot",
+  "description": "CT4302_Chatbot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
