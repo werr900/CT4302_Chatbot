@@ -44,16 +44,16 @@ console.log('Answer: ' + obj['강아지']['아침']['집']); //// debugging
 app.post('/', function (request, response) {
     console.log('request: \n' + JSON.stringify(request.body));
     //var item = req.body.result.parameters['item'];
-    var entities_1 = request.body.queryResult.parameters['entities1'];
-    var entities_2 = request.body.queryResult.parameters['entities2'];
-    var entities_3 = request.body.queryResult.parameters['entities3'];
+    var object = request.body.queryResult.parameters['object'];
+    var time = request.body.queryResult.parameters['time'];
+    var destination = request.body.queryResult.parameters['destination'];
     
     let action = (request.body.queryResult.action) ? request.body.queryResult.action: 'default';
 
 
     const actionHandlers = {
-        'entities_1.entities_2.entities_3': () => {
-            let responseToUser = { fulfillmentText: obj[entities1][entities2][entities3]};
+        'object.time.destination': () => {
+            let responseToUser = { fulfillmentText: obj[object][time][destination]};
             sendResponse(responseToUser);
         },
         
