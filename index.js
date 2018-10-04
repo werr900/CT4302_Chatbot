@@ -49,10 +49,9 @@ app.post('/', function (request, response) {
     var when = request.body.queryResult.parameters['when'];
     
     let action = (request.body.queryResult.action) ? request.body.queryResult.action: 'default';
-
-
-   const actionHandlers = {
-     'what.who.when': () => {
+    
+    const actionHandlers = {
+        'what.who.when': () => {
             let responseToUser = { fulfillmentText: obj[what][who][when]};
             sendResponse(responseToUser);
         },
